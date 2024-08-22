@@ -1,0 +1,406 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1086px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.tab__button--active {
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+
+.tab__button--active::before {
+  content: "";
+  width: 125%;
+  border: 5px solid #429f3a;
+  border-radius: 5px;
+
+  position: absolute;
+  left: -9px;
+  bottom: 0;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.tab__content-list {
+  list-style: none;
+  display: flex;
+}
+
+.middle-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.little-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.little-text {
+  font-size: 12px;
+  color: #454343;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444444;
+}
+.hidden {
+  display: none;
+}
+
+.tab__button-container {
+  display: flex;
+  justify-content: center;
+  gap: 98px;
+  border-bottom: 0.5px solid #b2b2b2;
+}
+
+.tab__button {
+  border: none;
+  background-color: inherit;
+  padding: 16px 0 20px 0;
+  cursor: pointer;
+}
+
+.tab__content {
+  margin-top: 50px;
+  display: none;
+}
+
+.tabs__content--active {
+  display: block;
+}
+
+.tab__content-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.tab__content-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px 86px;
+  margin-bottom: 54px;
+}
+
+.tab__content-list-info {
+  flex-direction: column;
+  gap: 11px;
+}
+
+.tab__content-item:not(:first-child) {
+  width: 480px;
+  border-bottom: 0.5px solid #b2b2b280;
+}
+
+.tab__content-cards-container {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 16px;
+}
+
+.tab__content-card {
+  width: 250px;
+  border: 1px solid #dedede;
+  border-top: none;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 19px;
+}
+
+.tab__content-star {
+  color: #f9ce1e;
+}
+
+.tab__content-list-star {
+  gap: 3px;
+}
+
+.tab__content-img {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.tab__content-img-like {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.tab__content-img-like:hover {
+  color: red;
+}
+
+.tab__container-card-text-container {
+  margin-bottom: 29px;
+  padding-left: 12px;
+}
+
+.tab__content-subtitle {
+  color: #89817f;
+}
+
+.tab__content-buy-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+}
+
+.tab__content-price {
+  color: #89817f;
+  margin-bottom: 10px;
+}
+
+.tab__content-price span {
+  color: #424141;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tab__content-img-basket {
+  cursor: pointer;
+}
+
+.tab__content-slide {
+  width: 288px;
+  max-height: 190px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px 2px #0000001a;
+}
+.tab__content-slide-img {
+  width: 100px;
+  height: 94px;
+  border-radius: 8px;
+}
+.tab__content-slide-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 28px;
+  padding-left: 2px;
+}
+.slide-title {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 7px;
+}
+.slide-title:nth-child(4) {
+  font-size: 13px;
+}
+
+.tab__content-slide-subtitle {
+  font-size: 11px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.tab__content-slide-price span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tab__content-slide-price {
+  font-size: 13px;
+  font-weight: 400;
+  color: #4d4b4b;
+  text-align: end;
+  margin-right: 21px;
+}
+
+.tab__content-btn-slide {
+  display: flex;
+  padding: 14px 16px;
+  color: #429f3a;
+  font-size: 14px;
+  background-color: inherit;
+  border: 0.7px solid #dedede;
+  border-radius: 5px;
+  margin: 0 21px 21px auto;
+  margin-top: 5px;
+}
+
+.tab__content-btn-slide img {
+  margin-left: 19px;
+}
+
+.tab__content-slide-content-wrapper {
+  margin-left: 4px;
+  flex-basis: 60%;
+}
+
+.tab__content-text-reviews {
+  width: 523px;
+  margin-bottom: 33px;
+}
+
+.tab__content-button {
+  background-color: #429f3a;
+  padding: 10px 18px;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.tab__container-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab__content-text-container-where {
+  width: 511px;
+}
+
+.tab__content-images-buttons-container {
+  width: 376px;
+}
+
+.tab__content-img-where {
+  margin-bottom: 25px;
+  display: inline-block;
+  width: 100%;
+}
+
+.tab__content-button-where {
+  padding: 10px 41px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: inherit;
+  border: 0.5px solid #444444;
+  border-radius: 5px;
+}
+
+.tab__content-button-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.tab__content-title {
+  display: none;
+}
+
+@media (max-width: 378px) {
+  .hidden {
+    display: block;
+  }
+  .tab__button--active {
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .tab__button--active::before {
+    content: "";
+    width: 125%;
+    border: 3px solid #429f3a;
+    border-radius: 5px;
+
+    position: absolute;
+    left: -9px;
+    bottom: 0;
+  }
+  .middle-title {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .tab__button-container {
+    gap: 48px;
+  }
+
+  .tab__button {
+    font-size: 15px;
+  }
+
+  .tab__content {
+    margin-top: 24px;
+  }
+
+  .tab__content-text {
+    text-align: justify;
+  }
+
+  .tab__content-item:not(:first-child) {
+    width: 336px;
+  }
+
+  .tab__content-cards-container {
+    display: none;
+  }
+
+  .tab__content-info-container {
+    gap: 15px 86px;
+  }
+
+  .tab__content-slide {
+    margin-right: 16px;
+  }
+
+  .tab__content-text-reviews {
+    width: 100%;
+  }
+
+  .tab__content-button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .tab__container-content-wrapper {
+    flex-direction: column;
+  }
+
+  .tab__content-text-where {
+    width: 334px;
+  }
+
+  .tab__content-images-buttons-container {
+    width: 334px;
+  }
+
+  .tab__content-button-where {
+    padding: 9px 27px;
+    font-size: 15px;
+    font-weight: 600;
+    gap: 8px;
+  }
+
+  .tab__content-button-where:nth-child(2) {
+    padding: 9px 23px;
+  }
+
+  .tab__content-title {
+    font-weight: 600;
+    display: inline-block;
+    margin: 17px 0;
+  }
+}
